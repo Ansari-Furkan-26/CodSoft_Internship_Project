@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/3/3c/Wv_logo_proposal_flying_plane_wo_text.png">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet"/>
+  <script src="https://kit.fontawesome.com/44e1e8e6fe.js" crossorigin="anonymous"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="book.css">
+  <link rel="stylesheet" href="Schedule.css">
+  <link rel="stylesheet" href="offer.css">
+  <link rel="stylesheet" href="loader.css">
+  <link rel="stylesheet" href="activities.css">
+  <link rel="stylesheet" href="family.css">
+  <link rel="stylesheet" href="footer.css">
+  <title>FlightFinder</title>
+</head>
+<body>
+  <div id="load">
+    <div class="loader">
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+  </div>  
+  </div>
+ 
+  <div class="bg">
+  <header id="nav-menu" aria-label="navigation bar">
+    <div class="container">
+      <div class="nav-start">
+        <a class="logo">
+          <h2>FlightFinder</h2>
+       </a>
+        <nav class="menu">
+          <ul class="menu-bar">
+            <li>
+              <button class="nav-link dropdown-btn" data-dropdown="dropdown1" aria-haspopup="true" aria-expanded="false" aria-label="browse">
+                Book
+                <i class="bx bx-chevron-down" aria-hidden="true"></i>
+              </button>
+              <div id="dropdown1" class="dropdown">
+                <ul role="menu">
+                  <li role="menuitem">
+                    <a class="dropdown-link" href="booking.html">
+                      <img src="https://raw.githubusercontent.com/Evavic44/responsive-navbar-with-dropdown/main/assets/icons/botd.svg" class="icon" />
+                      <div>
+                        <span class="dropdown-link-title">Search for a flight </span>
+                        <p>Book a flight</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li role="menuitem">
+                    <a class="dropdown-link" href="#flight_schedule">
+                      <img src="https://raw.githubusercontent.com/Evavic44/responsive-navbar-with-dropdown/main/assets/icons/fs.svg" class="icon" />
+                      <div>
+                        <span class="dropdown-link-title">Flight schedules </span>
+                        <p>Explore routes across the globe.</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li role="menuitem">
+                    <a class="dropdown-link" href="#flight_schedule">
+                      <img src="https://raw.githubusercontent.com/Evavic44/responsive-navbar-with-dropdown/main/assets/icons/sp.svg" class="icon" />
+                      <div>
+                        <span class="dropdown-link-title">Featured fares</span>
+                        <p>Find the best deals for Emirates flights</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li role="menuitem">
+                    <a class="dropdown-link" href="#DEALS">
+                      <img src="https://raw.githubusercontent.com/Evavic44/responsive-navbar-with-dropdown/main/assets/icons/cf.svg" class="icon" />
+                      <div>
+                        <span class="dropdown-link-title">Special offers</span>
+                        <p>More discoveries, more Skywards Miles, more benefits.</p>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li>
+              <button class="nav-link dropdown-btn" data-dropdown="dropdown2" aria-haspopup="true" aria-expanded="false" aria-label="discover">
+                Discover
+                <i class="bx bx-chevron-down" aria-hidden="true"></i>
+              </button>
+              <div id="dropdown2" class="dropdown">
+                <ul role="menu">
+                  <li>
+                    <span class="dropdown-link-title">Browse Categories</span>
+                  </li>
+                  <li role="menuitem">
+                    <a class="dropdown-link" href="#activity">Activities Sports</a>
+                  </li>
+                  <li role="menuitem">
+                    <a class="dropdown-link" href="#Family">Family Vacation</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li><a class="nav-link" href="#explore">Explore</a></li>
+            <li><a class="nav-link" href="package.html">Package</a></li>
+            <li><a class="nav-link" href="#footer">About</a></li>
+          </ul>
+        </nav>
+      </div>
+  
+      <div class="nav-end">
+        <div class="right-container">
+          <a href="sign.html">Login</a>
+          <button class="btn btn-primary"> <a href="sign.html">Create</a></button>
+        </div>
+  
+        <button id="hamburger" aria-label="hamburger" aria-haspopup="true" aria-expanded="false">
+          <i class="bx bx-menu" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </header>  
+  </main>
+
+<!-- Body -->
+<section class="homepage">
+  <div class="intro">
+    <div class="greet">
+      <h4>Welcome to Tour Travel</h4>
+      <h1>Travel the world like <br> never before and get <br> better taste.</h1>
+      <h3>Discover your ideal travel experience with our expert advice, <br>travel tips, destination information, and endless inspiration to <br>
+      plan and book your perfect trip.</h3> <br>
+      <a href="sign.html"><button class="btn">Get Start</button></a>
+      <img class="vector" src="https://i.pinimg.com/564x/09/85/43/09854378b0a72b45b3c3bad93922a463.jpg" alt="airplane">
+    </div>
+
+      <div class="photo" data-aos="zoom-in-up">
+        <img class="pic1" src="https://i.pinimg.com/564x/e7/04/56/e7045643b35fba6754bf68e0dcae3bb0.jpg" alt="beach">
+        <img class="pic2" src="https://i.pinimg.com/564x/f6/a6/80/f6a68049dda3b982ef1094424880760b.jpg" alt="saudi">
+      </div>
+  </div>
+</section>
+</div>
+
+<!-- BOOKING CENTER -->
+    <section class="section__container plan__container" data-aos="fade-up">
+      <p class="subheader">TRAVEL SUPPORT</p>
+      <h2 class="section__header">Plan your travel with confidence</h2>
+      <p class="description">
+        Find help with your bookings and travel plans, and seee what to expect
+        along your journey.
+      </p>
+      
+<!--      Schedul     -->
+<section id="flight_schedule">
+<div class="flightsch" data-aos="zoom-in-up">
+  <h3>"Unlock your next adventure with exclusive flight deals – click now to turn your dreams into boarding passes!"
+  <a class="btn" href="booking.html">Book Your Trip</a></h3>
+  <img src="https://img.freepik.com/free-vector/plane-boarding-concept-illustration_114360-21790.jpg?w=996&t=st=1699729069~exp=1699729669~hmac=fdd8fcd9f7df99f03e9f52bf7f084660b4cfdad0350955672631a162a2ed230a" alt="">
+</div>
+</section>
+
+<!-- Offers -->
+<section id="DEALS">
+  <div class="marquee">
+  <div class="offers">
+      <div class="cookie-card">
+      <span class="title">Get 25% Off</span>
+      <p class="description">End Today</p>
+      <div class="actions">
+          <button class="pref"> View More Detail </button>
+          <button class="accept"> Select </button>
+      </div>
+  </div>
+  
+  <div class="cookie-card">
+      <span class="title">Upto 18% Cashback</span>
+      <p class="description">Valid till 12 Nov'23</p>
+      <div class="actions">
+          <button class="pref"> View More Detail </button>
+          <button class="accept"> Select </button>
+      </div>
+      </div> 
+  
+  <div class="cookie-card">
+      <span class="title">Upto 6% - 6E Reward</span>
+      <p class="description">Using co-brand credit card</p>
+      <div class="actions">
+          <button class="pref"> View More Detail </button>
+          <button class="accept"> Select </button>
+      </div>
+      </div> 
+  
+  <div class="cookie-card">
+      <span class="title">Book International Flight in &#8377;7000</span>
+      <p class="description">Valid till 5 Nov'23</p>
+      <div class="actions">
+          <button class="pref"> View More Detail </button>
+          <button class="accept"> Select </button>
+      </div>
+      </div> 
+  <div class="offers">
+      <div class="cookie-card">
+      <span class="title">Get 50% Off</span>
+      <p class="description">End Today</p>
+      <div class="actions">
+          <button class="pref"> View More Detail </button>
+          <button class="accept"> Select </button>
+      </div>
+  </div>
+  <div class="offers">
+      <div class="cookie-card">
+      <span class="title">Get Upto &#8377;2500 Off</span>
+      <p class="description">Valid till 30 Nov'23</p>
+      <div class="actions">
+          <button class="pref"> View More Detail </button>
+          <button class="accept"> Select </button>
+      </div>
+  </div>
+  </div>
+
+        <div class="cookie-card">
+        <span class="title">Get 25% Off</span>
+        <p class="description">End Today</p>
+        <div class="actions">
+            <button class="pref"> View More Detail </button>
+            <button class="accept"> Select </button>
+        </div>
+    </div>
+    
+    <div class="cookie-card">
+        <span class="title">Upto 18% Cashback</span>
+        <p class="description">Valid till 12 Nov'23</p>
+        <div class="actions">
+            <button class="pref"> View More Detail </button>
+            <button class="accept"> Select </button>
+        </div>
+        </div> 
+    
+    <div class="cookie-card">
+        <span class="title">Upto 6% - 6E Reward</span>
+        <p class="description">Using co-brand credit card</p>
+        <div class="actions">
+            <button class="pref"> View More Detail </button>
+            <button class="accept"> Select </button>
+        </div>
+        </div> 
+    
+    <div class="cookie-card">
+        <span class="title">Book International Flight in &#8377;7000</span>
+        <p class="description">Valid till 5 Nov'23</p>
+        <div class="actions">
+            <button class="pref"> View More Detail </button>
+            <button class="accept"> Select </button>
+        </div>
+        </div> 
+    <div class="offers">
+        <div class="cookie-card">
+        <span class="title">Get 50% Off</span>
+        <p class="description">End Today</p>
+        <div class="actions">
+            <button class="pref"> View More Detail </button>
+            <button class="accept"> Select </button>
+        </div>
+    </div>
+    <div class="offers">
+        <div class="cookie-card">
+        <span class="title">Get Upto &#8377;2500 Off</span>
+        <p class="description">Valid till 30 Nov'23</p>
+        <div class="actions">
+            <button class="pref"> View More Detail </button>
+            <button class="accept"> Select </button>
+        </div>
+    </div>
+    </div>
+  </div>
+
+</section>
+
+  <!--     Activity       -->
+  <section id="activity">
+    <div class="act_photo">
+        <img src="https://i.pinimg.com/564x/dc/48/b7/dc48b717dc65c863526fd471b4d2a2c7.jpg" data-aos="zoom-in-right" alt=""> 
+        <img src="https://i.pinimg.com/564x/70/90/b0/7090b0260f6d568431a850b5786c180c.jpg" data-aos="zoom-in-right" alt="" class="img"><br>
+        <img src="https://i.pinimg.com/564x/5d/39/89/5d3989a359641449574f0d744540fb36.jpg" data-aos="zoom-in-right" alt="" class="img">
+        <img src="https://i.pinimg.com/564x/d2/10/dc/d210dc06bda372ad43cccee7f0e8cc99.jpg" data-aos="zoom-in-right" alt="" class="img">
+    </div>
+    <div data-aos="zoom-in-left" class="act_info">
+        <h1>We Recommend Beautiful Destination every month</h1>
+        <p>Due to India's vast geographical diversity, the country offers a vast array of adventure activities. With the increasing popularity
+             of adventure sports among the Indian population, many old, as well as newly discovered adventure sports, are making an appearance.
+             Covering almost all aspects of nature, India has a list of crazy possibilities when it comes to thrilling activities. </p>
+        <button class="btn explore"> <a href="#explore">Explore</a></button>
+        <ul>
+            <span>5</span><li>year of <br> experience</li>
+            <span>10K</span><li>Destination <br>Plans</li>
+        </ul>
+    </div>
+</section>
+
+<!--     Family     -->
+<h1 class="fam" id="Family" data-aos="fade-up">Most Popular Family Vacation</h1> 
+<setion id="family_vac">
+     
+<div class="card"  data-aos="flip-left">
+<div class="img0">
+    <div class="save">
+    <svg class="svg" width="683" height="683" viewBox="0 0 683 683" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g clip-path="url(#clip0_993_25)">
+        <g mask="url(#mask0_993_25)">
+        <path d="M148.535 19.9999C137.179 19.9999 126.256 24.5092 118.223 32.5532C110.188 40.5866 105.689 51.4799 105.689 62.8439V633.382C105.689 649.556 118.757 662.667 134.931 662.667H135.039C143.715 662.667 151.961 659.218 158.067 653.09C186.451 624.728 270.212 540.966 304.809 506.434C314.449 496.741 327.623 491.289 341.335 491.289C355.045 491.289 368.22 496.741 377.859 506.434C412.563 541.074 496.752 625.242 524.816 653.348C530.813 659.314 538.845 662.667 547.308 662.667C563.697 662.667 576.979 649.395 576.979 633.019V62.8439C576.979 51.4799 572.48 40.5866 564.447 32.5532C556.412 24.5092 545.489 19.9999 534.133 19.9999H148.535Z" stroke="#CED8DE" stroke-width="40" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+        </g>
+        </g>
+        <defs>
+        <clipPath id="clip0_993_25">
+        <rect width="682.667" height="682.667" fill="white"></rect>
+        </clipPath>
+        </defs>
+            </svg>
+          </div>
+        </div>
+      
+        <div class="text">
+          <p class="h3">Andaman And Nicobar</p>
+          <p class="p">The tropical environment, white sandy beaches and coral reefs make a trip adventurous and mesmerizing one.</p>
+      </div>
+    </div>
+
+<div class="card" data-aos="flip-left">
+    <div class="img1">
+        <div class="save">
+        <svg class="svg" width="683" height="683" viewBox="0 0 683 683" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_993_25)">
+            <g mask="url(#mask0_993_25)">
+            <path d="M148.535 19.9999C137.179 19.9999 126.256 24.5092 118.223 32.5532C110.188 40.5866 105.689 51.4799 105.689 62.8439V633.382C105.689 649.556 118.757 662.667 134.931 662.667H135.039C143.715 662.667 151.961 659.218 158.067 653.09C186.451 624.728 270.212 540.966 304.809 506.434C314.449 496.741 327.623 491.289 341.335 491.289C355.045 491.289 368.22 496.741 377.859 506.434C412.563 541.074 496.752 625.242 524.816 653.348C530.813 659.314 538.845 662.667 547.308 662.667C563.697 662.667 576.979 649.395 576.979 633.019V62.8439C576.979 51.4799 572.48 40.5866 564.447 32.5532C556.412 24.5092 545.489 19.9999 534.133 19.9999H148.535Z" stroke="#CED8DE" stroke-width="40" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+            </g>
+            <defs>
+            <clipPath id="clip0_993_25">
+            <rect width="682.667" height="682.667" fill="white"></rect>
+            </clipPath>
+            </defs>
+                </svg>
+                </div>
+            </div>
+            
+            <div class="text">
+                <p class="h3">Himachal Pradesh</p>
+                <p class="p">Traveling with family and planning to from river rafting to trekking, Himachal is an apt choice for a traveler with kids.</p>
+            </div>
+        </div>
+
+<div class="card"  data-aos="flip-left">
+    <div class="img3">
+        <div class="save">
+        <svg class="svg" width="683" height="683" viewBox="0 0 683 683" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_993_25)">
+            <g mask="url(#mask0_993_25)">
+            <path d="M148.535 19.9999C137.179 19.9999 126.256 24.5092 118.223 32.5532C110.188 40.5866 105.689 51.4799 105.689 62.8439V633.382C105.689 649.556 118.757 662.667 134.931 662.667H135.039C143.715 662.667 151.961 659.218 158.067 653.09C186.451 624.728 270.212 540.966 304.809 506.434C314.449 496.741 327.623 491.289 341.335 491.289C355.045 491.289 368.22 496.741 377.859 506.434C412.563 541.074 496.752 625.242 524.816 653.348C530.813 659.314 538.845 662.667 547.308 662.667C563.697 662.667 576.979 649.395 576.979 633.019V62.8439C576.979 51.4799 572.48 40.5866 564.447 32.5532C556.412 24.5092 545.489 19.9999 534.133 19.9999H148.535Z" stroke="#CED8DE" stroke-width="40" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+            </g>
+            <defs>
+            <clipPath id="clip0_993_25">
+            <rect width="682.667" height="682.667" fill="white"></rect>
+            </clipPath>
+            </defs>
+                </svg>
+                </div>
+            </div>
+            
+            <div class="text">
+                <p class="h3"> Rajasthan</p>
+                <p class="p">The royal Rajasthan and its luxury is worth experiencing. Explore the vast deserts, majestic palaces, glimpses into the wildlife.</p>
+            </div>
+        </div> 
+
+<div class="card" data-aos="flip-left">
+    <div class="img4">
+        <div class="save">
+        <svg class="svg" width="683" height="683" viewBox="0 0 683 683" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_993_25)">
+            <g mask="url(#mask0_993_25)">
+            <path d="M148.535 19.9999C137.179 19.9999 126.256 24.5092 118.223 32.5532C110.188 40.5866 105.689 51.4799 105.689 62.8439V633.382C105.689 649.556 118.757 662.667 134.931 662.667H135.039C143.715 662.667 151.961 659.218 158.067 653.09C186.451 624.728 270.212 540.966 304.809 506.434C314.449 496.741 327.623 491.289 341.335 491.289C355.045 491.289 368.22 496.741 377.859 506.434C412.563 541.074 496.752 625.242 524.816 653.348C530.813 659.314 538.845 662.667 547.308 662.667C563.697 662.667 576.979 649.395 576.979 633.019V62.8439C576.979 51.4799 572.48 40.5866 564.447 32.5532C556.412 24.5092 545.489 19.9999 534.133 19.9999H148.535Z" stroke="#CED8DE" stroke-width="40" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+            </g>
+            <defs>
+            <clipPath id="clip0_993_25">
+            <rect width="682.667" height="682.667" fill="white"></rect>
+            </clipPath>
+            </defs>
+                </svg>
+                </div>
+            </div>
+            
+            <div class="text">
+                <p class="h3">Agra</p>
+                <p class="p">Immerse in the beautiful Taj Mahal. This symmetrical monument took about 22 years to complete and is celebrated as an epitome of love.</p>
+            </div>
+        </div>
+
+<div class="card" data-aos="flip-left">
+    <div class="img5">
+        <div class="save">
+        <svg class="svg" width="683" height="683" viewBox="0 0 683 683" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_993_25)">
+            <g mask="url(#mask0_993_25)">
+            <path d="M148.535 19.9999C137.179 19.9999 126.256 24.5092 118.223 32.5532C110.188 40.5866 105.689 51.4799 105.689 62.8439V633.382C105.689 649.556 118.757 662.667 134.931 662.667H135.039C143.715 662.667 151.961 659.218 158.067 653.09C186.451 624.728 270.212 540.966 304.809 506.434C314.449 496.741 327.623 491.289 341.335 491.289C355.045 491.289 368.22 496.741 377.859 506.434C412.563 541.074 496.752 625.242 524.816 653.348C530.813 659.314 538.845 662.667 547.308 662.667C563.697 662.667 576.979 649.395 576.979 633.019V62.8439C576.979 51.4799 572.48 40.5866 564.447 32.5532C556.412 24.5092 545.489 19.9999 534.133 19.9999H148.535Z" stroke="#CED8DE" stroke-width="40" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+            </g>
+            <defs>
+            <clipPath id="clip0_993_25">
+            <rect width="682.667" height="682.667" fill="white"></rect>
+            </clipPath>
+            </defs>
+                </svg>
+                </div>
+            </div>
+            
+            <div class="text">
+                <p class="h3">Mumbai</p>
+                <p class="p">Home to most of the Bollywood celebrities, the city of dreams, literally never sleeps. Places near Mumbai attracts tourists like crazy.</p>
+            </div>
+        </div>
+
+<div class="card" data-aos="flip-left">
+    <div class="img6">
+        <div class="save">
+        <svg class="svg" width="683" height="683" viewBox="0 0 683 683" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_993_25)">
+            <g mask="url(#mask0_993_25)">
+            <path d="M148.535 19.9999C137.179 19.9999 126.256 24.5092 118.223 32.5532C110.188 40.5866 105.689 51.4799 105.689 62.8439V633.382C105.689 649.556 118.757 662.667 134.931 662.667H135.039C143.715 662.667 151.961 659.218 158.067 653.09C186.451 624.728 270.212 540.966 304.809 506.434C314.449 496.741 327.623 491.289 341.335 491.289C355.045 491.289 368.22 496.741 377.859 506.434C412.563 541.074 496.752 625.242 524.816 653.348C530.813 659.314 538.845 662.667 547.308 662.667C563.697 662.667 576.979 649.395 576.979 633.019V62.8439C576.979 51.4799 572.48 40.5866 564.447 32.5532C556.412 24.5092 545.489 19.9999 534.133 19.9999H148.535Z" stroke="#CED8DE" stroke-width="40" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+            </g>
+            <defs>
+            <clipPath id="clip0_993_25">
+            <rect width="682.667" height="682.667" fill="white"></rect>
+            </clipPath>
+            </defs>
+                </svg>
+                </div>
+            </div>
+            
+            <div class="text">
+                <p class="h3">Goa</p>
+                <p class="p">Goa is a tiny tourist state for its stunning beaches, rich culture. The sunny state is a destination that offers something for everyone.</p>
+            </div>
+        </div>
+    </setion>
+
+<!--     Explore     -->
+    <section id="explore" data-aos="fade-up">
+      <h1> Explore India's Best Destinations</h1>
+   <div class="videos">
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/yLE5bDX7M3Y?si=pGQaHVVXRcx39K-0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/lJyzByVH1oQ?si=Qwd5a4lEP7up5eMo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/aV9gfuUhegE?si=u-mGVgWTkHTNxibN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+   </div>     
+       </section>
+
+<!--     Footer    -->
+<footer id="footer">
+  <div class="footer-container">
+    <div class="footer-logo">
+      <h2>FlightFinder</h2>
+      <p>A website that provides travel reviews & trip fares. Over 1.5 billion people book travel per year, 70% of which is done online.</p>
+      <div class="social">
+       <a href="mailto:26furqan.ansari@gmail.com"><i class="fa-solid fa-at fa icons"></i></a>
+      <a href="https://www.linkedin.com/in/furqan-ansari-frontnedgenie/"><i class="fa-brands icons fa-linkedin-in fa"></i></a>
+      <a href="https://www.instagram.com/furqan_.26/" class="fa fa-instagram icons"></a> 
+      </div>
+    </div>
+    <div class="footer-links">
+      <div class="platform none">
+        <h3>Feature</h3>
+        <ul>
+          <a href="booking.html"><li>Search Flight</li></a>
+          <a href="#flight_schedule"><li>Flight Schedule</li></a>
+          <a href="#flight_schedule"><li>Feature Fare</li></a>
+          <a href="#DEALS"><li>Special Offers</li></a>
+          <a href="#activity"><li>Activity Sports</li></a>
+          <a href="#Family"><li>Family Vacation</li></a>
+        </ul>
+      </div>
+      <div class="learning none">
+        <h3>More</h3>
+        <ul>
+          <a href="#"><li>Discover</li></a>
+          <a href="#explore"><li>Explore</li></a>
+          <a href="package.html"><li>Package</li></a>
+          <a href="package.html"><li>Photo Gallary</li></a>
+        </ul>
+      </div>
+      <div class="About none">
+        <h3>About</h3>
+        <ul>
+          <a href="#"><li>Booking</li></a>
+          <a href="#"><li>Team</li></a>
+          <a href="#"><li>Partners</li></a>
+          <a href="#"><li>Contact Us</li></a>
+          <a href="#"><li>News & Press</li></a>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-contactus">
+      <h2>Contact US</h2>
+      <a href="mailto:26furqan.ansari@gmail.com"><button>Get in touch</button></a>
+    </div>
+  </div>
+  <div class="copywright-tag">&copyCopyright by FrontendGeine. All rights reserved</div>
+</footer>
+
+
+  <iframe class="add" width="560" height="315" src="https://www.youtube.com/embed/yJg-Y5byMMw?si=3HoKD2DfxPO6VzLk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <iframe class="add" width="560" height="315" src="https://www.youtube.com/embed/yJg-Y5byMMw?si=3HoKD2DfxPO6VzLk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<script>
+    const dropdownBtn = document.querySelectorAll(".dropdown-btn");
+const dropdown = document.querySelectorAll(".dropdown");
+const hamburgerBtn = document.getElementById("hamburger");
+const navMenu = document.querySelector(".menu");
+const links = document.querySelectorAll(".dropdown a");
+
+function setAriaExpandedFalse() {
+  dropdownBtn.forEach((btn) => btn.setAttribute("aria-expanded", "false"));
+}
+
+function closeDropdownMenu() {
+  dropdown.forEach((drop) => {
+    drop.classList.remove("active");
+    drop.addEventListener("click", (e) => e.stopPropagation());
+  });
+}
+
+function toggleHamburger() {
+  navMenu.classList.toggle("show");
+}
+
+dropdownBtn.forEach((btn) => {
+  btn.addEventListener("click", function (e) {
+    const dropdownIndex = e.currentTarget.dataset.dropdown;
+    const dropdownElement = document.getElementById(dropdownIndex);
+
+    dropdownElement.classList.toggle("active");
+    dropdown.forEach((drop) => {
+      if (drop.id !== btn.dataset["dropdown"]) {
+        drop.classList.remove("active");
+      }
+    });
+    e.stopPropagation();
+    btn.setAttribute(
+      "aria-expanded",
+      btn.getAttribute("aria-expanded") === "false" ? "true" : "false"
+    );
+  });
+});
+
+// close dropdown menu when the dropdown links are clicked
+links.forEach((link) =>
+  link.addEventListener("click", () => {
+    closeDropdownMenu();
+    setAriaExpandedFalse();
+    toggleHamburger();
+  })
+);
+
+// close dropdown menu when you click on the document body
+document.documentElement.addEventListener("click", () => {
+  closeDropdownMenu();
+  setAriaExpandedFalse();
+});
+
+// close dropdown when the escape key is pressed
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    closeDropdownMenu();
+    setAriaExpandedFalse();
+  }
+});
+
+// toggle hamburger menu
+hamburgerBtn.addEventListener("click", toggleHamburger);
+
+  </script>
+
+<script>
+  var loader = document.getElementById("load");
+
+  window.addEventListener("load", function(){
+      loader.style.display = "none";
+  })
+
+</script>
+</script>
+
+<script>
+  AOS.init();
+</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+:root {
+--extra-light: #f1f5f9;
+}
+
+.flightsch{
+    top: 20px;
+    margin: 50px;
+    height: 350px;
+    width: auto;
+    display: flex;
+    border-radius: 2rem;
+    border: 1px solid var(--extra-light);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+}
+.flightsch .btn{
+    margin: 50px 50px 0 0;
+    height: 50px;
+    width: 200px;
+}
+.flightsch img{
+    margin-top: 20px;
+}
+
+.flightsch h3{
+    margin: 30px;
+    margin-top: 70px;
+    font-size: 22px;
+}
+
+#explore{
+    height: 50vh;
+}
+
+@media (max-width: 420px) {
+    .flightsch h3{
+        margin: 0;
+        margin-top: 150px;
+    }
+  }

@@ -1,0 +1,147 @@
+#family_vac{
+    padding: 20px 80px 0;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.fam{
+  padding: -5% 0 0 0;
+  margin-top: 40px;
+  font-size: 40px;
+  text-align: center;
+}
+.card {
+  width: 300px;
+  height: 280px;
+  margin: 10px;
+  background: white;
+  border-radius: 30px;
+  box-shadow: 15px 15px 30px #bebebe,
+             -15px -15px 30px #ffffff;
+  transition: 0.2s ease-in-out;
+}
+.img0 {
+  width: 100%;
+  height: 70%;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  background: url('https://i.pinimg.com/564x/fa/6c/ba/fa6cbaf15ddc25ada242ed9435e1ab86.jpg');
+  background-size: cover;
+  display: flex;
+  align-items: top;
+  justify-content: right;
+}
+.img1{
+background-image: url('https://i.pinimg.com/564x/41/00/91/410091f26fb4993d02b2956e5053f166.jpg');
+width: 100%;
+  height: 70%;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  background-size: cover;
+  display: flex;
+  align-items: top;
+  justify-content: right;
+}
+.img3 {
+  width: 100%;
+  height: 70%;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  background: url('https://i.pinimg.com/564x/42/84/d1/4284d101874bfadc6d0a9d4c331b2455.jpg');
+  background-size: cover;
+  display: flex;
+  align-items: top;
+  justify-content: right;
+}
+.img4 {
+  width: 100%;
+  height: 70%;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  background: url('https://i.pinimg.com/564x/ac/94/35/ac9435b1dae07a86462fa6fa691498c4.jpg');
+  background-size: cover;
+  display: flex;
+  align-items: top;
+  justify-content: right;
+}
+.img5 {
+  width: 100%;
+  height: 70%;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  background: url('https://i.pinimg.com/564x/3a/ab/c3/3aabc3283ea39f174414bd656a988239.jpg');
+  background-size: cover;
+  display: flex;
+  align-items: top;
+  justify-content: right;
+}
+.img6 {
+  width: 100%;
+  height: 70%;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  background: url('https://i.pinimg.com/564x/fe/c0/fb/fec0fb1c9a2a70f4812e3fe9ddc88d86.jpg');
+  background-size: cover;
+  display: flex;
+  align-items: top;
+  justify-content: right;
+}
+.save {
+  transition: 0.2s ease-in-out;
+  border-radius: 10px;
+  margin: 20px;
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  margin: 20px;
+  margin-top: -0.2px;
+  display: flex;
+  flex-direction: column;
+  align-items: space-around;
+}
+
+.save .svg {
+  transition: 0.2s ease-in-out;
+  width: 15px;
+  height: 15px;
+}
+
+.text .h3 {
+  font-family: 'Lucida Sans' sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: black;
+}
+
+.text .p {
+  font-family: 'Lucida Sans' sans-serif;
+  color: #534a4a;
+  font-size: 13px;
+}
+
+.card:hover {
+  cursor: pointer;
+  box-shadow: 0px 10px 20px rgba(0,0,0,0.1);
+}
+
+.save:hover {
+  transform: scale(1.1) rotate(10deg);
+}
+
+.break {
+  height: 0;
+}
+
+@media (max-width: 600px) {
+  #family_vac{
+    padding: 0%;
+    margin-left: 8%;
+  }
+}

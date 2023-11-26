@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+
+body{
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 2%;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-smoothing: antialiased;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+  font-size: 15px;
+}
+.cd__intro{
+   padding: 60px 30px;
+   margin-bottom: 15px;
+        flex-direction: column;
+
+}
+.cd__intro,
+.cd__credit{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    color: #333;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.cd__intro h1 {
+   font-size: 18pt;
+   padding-bottom: 15px;
+
+}
+.cd__intro p{
+   font-size: 14px;
+}
+
+.cd__action{
+   text-align: center;
+   display: block;
+   margin-top: 20px;
+}
+
+.cd__action a.cd__btn {
+  text-decoration: none;
+  color: #666;
+   border: 2px solid #666;
+   padding: 10px 15px;
+   display: inline-block;
+   margin-left: 5px;
+}
+.cd__action a.cd__btn:hover{
+   background: #666;
+   color: #fff;
+    transition: .3s;
+-webkit-transition: .3s;
+}
+.cd__action .cd__btn:before{
+  font-family: FontAwesome;
+  font-weight: normal;
+  margin-right: 10px;
+}
+.down:before{content: "\f019"}
+.back:before{content:"\f112"}
+
+.cd__credit{
+    padding: 12px;
+    font-size: 9pt;
+    margin-top: 40px;
+
+}
+.cd__credit a:hover:after{
+    font-family: FontAwesome;
+    content: "\f08e";
+    font-size: 9pt;
+    position: absolute;
+    margin: 3px;
+}
+.cd__main{
+  padding: 20px;
+}
+
+.column{
+  display: flex;
+}
+.card1 {
+ margin-top: 30px;
+  max-width: 350px;
+  border-width: 1px;
+  border-color: rgba(219, 234, 254, 1);
+  border-radius: 1rem;
+  background-color: rgba(255, 255, 255, 1);
+  padding: 20px;
+  height: 290px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.header1 {
+  display: flex;
+  align-items: center;
+  grid-gap: 1rem;
+  gap: 1rem;
+}
+
+.icon1 {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  background-color: rgba(96, 165, 250, 1);
+  padding: 0.5rem;
+  color: rgba(255, 255, 255, 1);
+}
+
+.icon1 svg {
+  height: 1rem;
+  width: 1rem;
+}
+
+.alert1 {
+  font-weight: 600;
+  color: rgba(107, 114, 128, 1);
+}
+
+
+.desc {
+  color: rgb(151 153 167);
+  font-size: 14px;
+  text-align: justify;
+}
+
+.message1 {
+  margin-top: 0.5rem;
+  color: rgba(107, 114, 128, 1);
+  font-size: 13px;
+  font-weight: 500;
+} 
+
+.actions1 a {
+  text-decoration: none;
+}
+
+.offers{
+  margin-top: 20px;
+}
+
+.mark-as-read, .read1 {
+  display: inline-block;
+  border-radius: 0.5rem;
+  width: 20%;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.read1 {
+  background-color: rgba(59, 130, 246, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+.card3 {
+  margin-top: 370px;
+  max-width: 350px;
+  margin-left: -390px;
+  background-color: rgb(7 16 45);
+  background: linear-gradient(to top right, rgb(7 16 45), rgb(58 60 84));
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  height: 230px;
+  border-radius: 20px;
+  border: 1px solid rgb(84 90 106);
+}
+
+.small-text, .title,.desc {
+  font-weight: 600;
+}
+
+.title,.desc {
+  margin: 8px 0;
+}
+
+.small-text {
+  color: #488aec;
+  font-size: 14px;
+}
+
+.title {
+  color: #fff;
+  font-size: 26px;
+  line-height: 26px;
+}
+
+.btn {
+  padding: 0.75rem 2rem;
+  outline: none;
+  height: 20px;
+  color: white;
+  text-decoration: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: rgba(59, 130, 246, 1);
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: 0.3s;
+} 
